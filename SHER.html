@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooh-e-Aqs poetry</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo"><i class="fas fa-feather-alt"></i> Rooh-e-Aqs Poetry</a>
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#poems">Poems</a>
+       
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+       
+    </div>
+</header>
+
+<form action="" id="search-form">
+    <input type="search" placeholder="Search poems..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<section class="home" id="home">
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content">
+                    <span>Welcome to Rooh-e-Aqs Poetry</span>
+                    
+                    <p>Where words dance like dervishes, embracing the soul,<br>In every verse, the truth unfolds.</p>
+                    <a href="#poems" class="btn">Discover Poems</a>
+                </div>
+                
+            </div>
+            <!-- Additional Slides -->
+            <div class="swiper-slide">
+                <div class="content">
+                    <span>Welcome to Rooh-e-Aqs</span>
+                    <h3>Another Captivating Message</h3>
+                    <p>This is another captivating message about the essence of poetry.</p>
+                    <a href="#poems" class="btn">Discover Poems</a>
+                </div>
+                
+            </div>
+            
+                
+            </div>
+            <!-- End of Additional Slides -->
+        </div>
+       
+</section>
+
+<section class="aboutus" id="about">
+    <h1 class="heading">About Rooh-e-Aqs</h1>
+    <div class="row">
+        
+        <div class="content">
+           
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                   
+                </div>
+                <div class="icons">
+                    <i class="fas fa-book"></i>
+                    
+                </div>
+                <div class="icons">
+                    <i class="fas fa-globe"></i>
+                    <span>Universal</span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<section class="poems" id="poems">
+    
+    <div class="poem-container">
+        <!-- Poems will be dynamically added here -->
+    </div>
+</section>
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+        },
+    });
+</script>
+
+</body>
+</html>
